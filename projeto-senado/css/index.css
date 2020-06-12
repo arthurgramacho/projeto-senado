@@ -1,0 +1,31 @@
+.img-titulo{
+	margin: 20px 10px 20px 0px;
+	width: 100%;
+}
+.text-titulo{
+//	vertical-align: middle;
+//	position: relative;
+	margin-top: 25px;
+}
+
+#tb-senadores th{
+	vertical-align: super;
+}
+
+#tb-senadores td{
+	vertical-align: middle;
+}
+
+#tb-senadores img, #tb-senadores .th-foto{
+	max-width: 100px;
+}
+
+#tb-senadores .th-nome{
+	min-width: 300px;
+}
+/*
+#tb-senadores .th-estado, #tb-senadores .th-partido, #tb-senadores .th-mmesa, #tb-senadores .th-mlider,
+#tb-senadores .th-totalctitular ,#tb-senadores .th-totalcsuplente{
+	max-width: 100px;
+}
+*/
