@@ -20,6 +20,9 @@ $(document).ready( function () {
 				getTotalComissoesSuplente(data.IdentificacaoParlamentar.CodigoParlamentar)
 			]);
 		});
+		
+		$("tbody").html("");
+		
 		$('#tb-senadores').DataTable({
 		  data: dataSet,
 		  columns: [
@@ -38,26 +41,10 @@ $(document).ready( function () {
 	});
 	
 	function getTotalComissoesTitular(codigoParlamentar){
-		//comissoes = {};
 		totalTitular = 0;
-		/*$.get( "http://legis.senado.leg.br/dadosabertos/senador/"+codigoParlamentar+"/comissoes.json", function retorno(data2) {
-			comissoes = data2.MembroComissaoParlamentar.Parlamentar.MembroComissoes.Comissao;
-			//console.log(comissoes);
-			if(comissoes){	
-			totalTitular = 0;
-				for(var i = 0; i < comissoes.length; i++){
-					if(comissoes[i].DescricaoParticipacao == "Titular"){
-						totalTitular++;
-					}
-					//console.log(comissoes[i].DescricaoParticipacao);
-					//console.log(totalTitular);		
-				}					
-			}
-			return comissoes;
-		});	*/
+		
 		jQuery.ajax({
-
-			url: "http://legis.senado.leg.br/dadosabertos/senador/"+codigoParlamentar+"/comissoes.json", //?id="+idUltimo,
+			url: "http://legis.senado.leg.br/dadosabertos/senador/"+codigoParlamentar+"/comissoes.json", 
 			dataType: "json",
 			async : false,
 			success: function(data) {
@@ -80,8 +67,7 @@ $(document).ready( function () {
 		totalSuplente = 0;
 		
 		jQuery.ajax({
-
-			url: "http://legis.senado.leg.br/dadosabertos/senador/"+codigoParlamentar+"/comissoes.json", //?id="+idUltimo,
+			url: "http://legis.senado.leg.br/dadosabertos/senador/"+codigoParlamentar+"/comissoes.json", 
 			dataType: "json",
 			async : false,
 			success: function(data) {
@@ -99,12 +85,5 @@ $(document).ready( function () {
 		});	
 		return totalSuplente;
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 } );

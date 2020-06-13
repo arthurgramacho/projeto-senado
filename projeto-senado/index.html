@@ -20,110 +20,44 @@
   <body>
 	<div class="row-fluid">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light static-top navbar-dark bg-dark">
-			 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="navbar-toggler-icon"></span>
-			</button> <a class="navbar-brand" href="#">Senado Federal</a>
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				
-				
-				<ul class="navbar-nav ml-md-auto">
-					<form class="form-inline">
-					<input class="form-control mr-sm-2" type="text"> 
-					<button class="btn btn-primary my-2 my-sm-0" type="submit">
-						Procurar
-					</button>
-				</form>
-				</ul>
-			</div>
+			<a class="navbar-brand" href="#">Senado Federal</a>			
 		</nav>
 	</div>
     <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="row">
-				<div class="col-md-2">
-					<img class="img-titulo" src="https://www12.senado.leg.br/hpsenado/++resource++senado.hpsenado/icones/logo.svg"></img>
-				</div>				
-				<div class="col-md-10 ">
-					<h2 class="text-titulo">
-						Lista de Senadores da República
-					</h2>
-				</div>	
-			</div>
-			<div class="table-responsive">
-				<table id="tb-senadores" class="table table-sm table-striped table-hover ">
-					<thead class="thead-light">
-						<tr>
-							<th class="th-foto">Foto</th>
-							<th class="th-nome">Nome</th>
-							<th class="th-estado">Estado</th>
-							<th class="th-partido">Partido</th>
-							<th class="th-mmesa">Membro da Mesa</th>
-							<th class="th-mlider">Membro da Liderança</th>
-							<th class="th-pgoficial">Página Oficial</th>
-							<th class="th-totalctitular">Total Comissões Titular</th>
-							<th class="th-totalcsuplente">Total Comissões Suplente</th>
-						</tr>
-					</thead>					
-					<tbody>
-					</tbody>
-				</table>
-			
-			<!--	<table id="tb-senadores" class="table table-sm table-striped table-hover ">
-					<thead class="thead-light">
-						<tr>
-							<th class="th-foto">Foto</th>
-							<th class="th-nome">Nome</th>
-							<th class="th-estado">Estado</th>
-							<th class="th-partido">Partido</th>
-							<th class="th-mmesa">Membro da Mesa</th>
-							<th class="th-mlider">Membro da Liderança</th>
-							<th class="th-pgoficial">Página Oficial</th>
-							<th class="th-totalctitular">Total Comissões Titular</th>
-							<th class="th-totalcsuplente">Total Comissões Suplente</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><img class="img" src="http://www.senado.leg.br/senadores/img/fotos-oficiais/senador4981.jpg"></td>
-							<td>Acir Gurgacz</td>
-							<td>RO</td>
-							<td>PDT</td>
-							<td>Não</td>
-							<td>Não</td>
-							<td><a href="http://www25.senado.leg.br/web/senadores/senador/-/perfil/4981" target="_blank">visitar</a></td>
-							<td>5</td>
-							<td>8</td>						
-						</tr>
-						<tr>
-							<td><img class="img" src="http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5982.jpg"></td>
-							<td>Alessandro Vieira</td>
-							<td>SE</td>
-							<td>CIDADANIA</td>
-							<td>Não</td>
-							<td>Não</td>
-							<td><a href="http://www25.senado.leg.br/web/senadores/senador/-/perfil/5982" target="_blank">visitar</a></td>
-							<td>7</td>
-							<td>2</td>						
-						</tr>					
-						<tr>
-							<td><img class="img" src="http://www.senado.leg.br/senadores/img/fotos-oficiais/senador4981.jpg"></td>
-							<td>Acir Gurgacz</td>
-							<td>RO</td>
-							<td>PDT</td>
-							<td>Não</td>
-							<td>Não</td>
-							<td><a href="http://www25.senado.leg.br/web/senadores/senador/-/perfil/4981" target="_blank">visitar</a></td>
-							<td>5</td>
-							<td>8</td>						
-						</tr>
-					</tbody>
-				</table>
-			-->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-2">
+						<img class="img-titulo" src="https://www12.senado.leg.br/hpsenado/++resource++senado.hpsenado/icones/logo.svg"></img>
+					</div>				
+					<div class="col-md-10 ">
+						<h2 class="text-titulo">
+							Lista de Senadores da República
+						</h2>
+					</div>	
+				</div>
+				<div class="table-responsive">
+					<table id="tb-senadores" class="table table-sm table-striped table-hover ">
+						<thead class="thead-light">
+							<tr>
+								<th class="th-foto">Foto</th>
+								<th class="th-nome">Nome</th>
+								<th class="th-estado">Estado</th>
+								<th class="th-partido">Partido</th>
+								<th class="th-mmesa">Membro da Mesa</th>
+								<th class="th-mlider">Membro da Liderança</th>
+								<th class="th-pgoficial">Página Oficial</th>
+								<th class="th-totalctitular">Total Comissões Titular</th>
+								<th class="th-totalcsuplente">Total Comissões Suplente</th>
+							</tr>
+						</thead>					
+						<tbody>
+							<td colspan="9" class="text-center"><img class="img-carregando" src="img/carregando.gif"></td>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 	<footer class="page-footer">
 		<div class="footer-copyright text-center py-3">
